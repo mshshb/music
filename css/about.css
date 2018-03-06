@@ -1,0 +1,34 @@
+#header div>a:nth-child(3){
+	color:#BABABA;
+}
+#about>div.content{
+	height:494px;
+	width:90%;
+	margin:7% auto;
+	display:flex;
+	justify-content:center;
+}
+#about>div.content>div{
+	display:inline-block;
+	width:40%;
+	height:494px;
+	position:relative;
+}
+#about>div.content div.picture{
+	width:60%;
+	height:264px;
+	background:#353B6B;
+	position:absolute;
+	bottom:0;
+}
+#about>div.content div.picture+img{
+	position:absolute;
+	bottom:15px;
+	left:15px;
+	transform:scale(0.98);
+}
+#about>div.content p{
+	font-size:12px;
+	margin-bottom:30px;
+	padding:5px;
+}

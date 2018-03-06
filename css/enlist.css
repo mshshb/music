@@ -1,0 +1,107 @@
+#header div>a:nth-child(7){
+	color:#BABABA;
+}
+#enlist{
+	position:relative;
+}
+#enlist>div.place{
+	background-image:url(../imgs/enlist/place.png);
+	background-size:100%;
+	height:400px;
+}
+#enlist>div.place>div.bg{
+	background-color:rgba(0,0,0,0.1);
+	height:400px;
+}
+#enlist>div.info{
+	width:65%;
+	margin:80px auto;
+	display:flex;
+	justify-content:space-between;
+}
+#enlist>div.info>div.enlist-intro{
+	height:300px;
+}
+#enlist>div.info>div.enlist-intro>h3{
+	color:#696969;
+	line-height:30px;
+}
+#enlist>div.info>div.enlist-intro>p{
+	font-size:13px;
+	line-height:33px;
+}
+/*表单*/
+#enlist-info{
+	width:68%;
+	color:#666;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+#enlist-info>p{
+	width:49%;
+	margin:5px 0;
+}
+#enlist-info>p.long{
+	width:100%;
+}
+select,input,textarea{
+	background:#333;
+	color:#6F6D6F;
+	font-size:14px;
+	padding-left:7px;
+	box-sizing:border-box;
+	outline:none;
+	border:none;
+}
+select,input:not([type="submit"]){
+	width:100%;
+	height:30px;
+}
+#enlist-info>p.star{
+	position:relative;
+}
+#enlist-info>p.star>input{
+	padding-left:11px;
+}
+#enlist-info>p.star>textarea{
+	width:100%;
+	height:100px;
+	font-size:20px;
+	padding:8px 11px;
+	margin-bottom:-6px;
+}
+#enlist-info>p.star>label{
+	position:absolute;
+	margin-left:12px;
+	margin-top:3px;
+	transition:all 0.2s linear;
+}
+#enlist-info>p.star>label>span{
+	color:#f00;
+	margin-left:2px;
+	transition:all 0.2s linear;
+}
+#enlist-info #btn,#enlist-info #res{
+	width:96px;
+	height:26px;
+	background:#494949;
+	color:#fff;
+	font-size:12px;
+	outline:none;
+	border:none;
+	margin:5px 0 20px;
+	cursor:pointer;
+}
+#enlist-info>p:last-child{
+	width:100%;
+	color:#999;
+}
+#enlist-info>p>span.care{
+	font-weight:900;
+	font-size:16px;
+}
+#enlist-info>p>span.care-text{
+	color:#E42715;
+	font-size:20px;
+}

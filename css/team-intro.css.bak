@@ -1,0 +1,27 @@
+#team-intro{
+	width:100%;
+	height:742px;
+	display:inline-flex;
+	justify-content: center;
+	align-items:center;
+}
+#team-intro>img{
+	width:390px;
+	height:390px;
+	margin-right:75px;
+}
+#team-intro>div.content>h2{
+	color:#fcfcfc;
+}
+#team-intro>div.content>p.name{
+	font-size:13px;
+	color:#bcbcbc;
+	margin:5px 0;
+}
+#team-intro>div.content>p.name~p{
+	width:730px;
+	letter-spacing:1px;
+	text-indent:16px;
+	color:#696969;
+	margin:10px 0;
+}

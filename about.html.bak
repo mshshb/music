@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>音乐培训机构 | 关于我们</title>
+		<link rel="stylesheet" href="css/base.css"/>
+		<link rel="stylesheet" href="css/header-footer.css"/>
+		<link rel="stylesheet" href="css/about.css"/>
+	</head>
+	<body>
+		<div class="main">
+			<header id="header"></header>
+			<section id="about">
+				<div class="content">
+					<div>
+						<div class="picture"></div>
+						<img src="imgs/about1.jpg" alt="" />
+					</div>
+					<div>
+						<h2>关于我们</h2>
+						<h5>ABOUT US</h5>
+						<p>忹忺忻忼忾忿怂怃怄怅怆怇怉怋怌怍怏怐怑怓怔，
+							怗怘怙怚怛怞怡怢怣怤怦怩怫怬怰怲，怳怴怵怶怷怸怹怺怼怿。
+							恀恁恂恃恄恒恇恈恊恌恍恎恏恑恒恓恔恗恙恚恛恜恝恞恠恡恦，
+							恧恫恬恮恰恱恲恷恂恃恄恅恒恇恈恊恌恍恎恏恑恒恓恔恖恗恙。
+							忸忹忺忻忼忾忿怂怃怄怅怆怇怉怋怌怍怏怐怑怓怔怗怘怙怚怛
+							怞怡怢怣怤怦怩怫恬恮恰恱恲恹恺恽。攴朰朲朳恃恄恅恒恙恚
+							恜恝恞恠恡忣忥忦忨忩忪忬忭忮忰忱忲忳忴念忶汹忸忹怙怚怛
+							怞怟怡怢怣怤怦怩怫怬怯怰，怲怳怴怵怶怷怸怹怺怼悙怿恀恁
+							恂恃恄恅恒忴念忶汹忸忹忺忻忼怞怟怡怢怣怤恓恔恖恔恙恅，
+							恒恇恍恎恾悈悊朰恓恙恾恿悀悁夳夵壱売圢圤圥圦圧圩圪忾忿怂。
+						</p>
+						<p>
+							恱恲恹恺恽。攴朰朲朳恃恄恅恒恙恚恜恝恞恠恡忣忥忦忨忩忪
+							忬忭忮忰忱忲忳忴念忶汹忸忹怙怚怛怞怟怡怢怣怤怦怩怫怬怯怰，
+							怲怳怴怵怶怷怸怹怺怼悙怿恀恁恂恃恄恅恒忴念忶汹忸忹忺忻忼
+							怞怟怡怢怣怤恓恔恖恔恙恅，恒恇恍恎恾悈悊朰恓恙恾恿悀悁夳
+							夵壱売圢圤圥圦圧圩圪忾忿怂。
+						</p>
+					</div>
+				</div>
+			</section>
+			<footer id="footer"></footer>
+		</div>
+		<script src="js/ajax.js"></script>
+		<script src="js/header-footer.js"></script>
+		<script src="js/about.js"></script>
+	</body>
+</html>

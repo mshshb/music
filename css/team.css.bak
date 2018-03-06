@@ -1,0 +1,76 @@
+#header div>a:nth-child(6){
+	color:#BABABA;
+}
+#team{
+	height:700px;
+	position:relative;
+}
+#team>div.team-show{
+	position:relative;
+	overflow:hidden;
+	margin:0 auto;
+}
+#team>div.team-show>ul.team-list{
+	float:left;
+	transition:all 0.5s ease-out;
+	display:flex;
+	border:1px solid red;
+}
+#team>div.team-show>ul.team-list>li{
+	width:280px;
+	margin:0 6%;
+	text-align:center;
+	vertical-align:top;
+	display:inline-block;
+}
+/*变色*/
+#team>div.team-show>ul.team-list>li.enter{
+	color:#A9A9A9;
+}
+#team>div.team-show>ul.team-list>li>img{
+	width:280px;
+	height:320px;
+	margin-bottom:55px;
+	transition:all 0.35s ease-in;
+}
+#team>div.team-show>ul.team-list>li>img.enter{
+	transform:scale(1.05);
+}
+#team>div.team-show>ul.team-list>li>a{
+	color:#aaa;
+	font-size:16px;
+	font-family:微软雅黑;
+}
+#team>div.team-show>ul.team-list>li>a.enter{
+	color:#BABABA;
+}
+#team>div.team-show>ul.team-list>li>a+p{
+	color:#aaa;
+	font-size:13px;
+	padding:8px 0;
+	transition:all 0.35s ease-in;
+}
+#team>div.team-show>ul.team-list>li>p+p{
+	font-size:13px;
+	transition:all 0.35s ease-in;
+}
+#team>a{
+	position:absolute;
+	top:31.5%;
+}
+/*#team>a.lf{
+	left:8%;
+}
+#team>a.rf{
+	left:89%;
+}*/
+#team>a.lf{
+	left:15%;
+}
+#team>a.rf{
+	left:81.5%;
+}
+#team>a>img{
+	width:45px;
+	height:45px;
+}

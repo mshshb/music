@@ -1,0 +1,48 @@
+
+#header div>a:nth-child(2){
+	color:#BABABA;
+}
+
+/*广告轮播*/
+#index div.show-person{
+	width:100%;
+	position:relative;
+	/*overflow:hidden;*/
+}
+#index div.show-person>ul{
+	display:flex;
+}
+
+#index>a{
+	width:70px;
+	height:70px;
+	text-align:center;
+	line-height:70px;
+	position:absolute;
+	top:57%;
+	background:transparent;
+	transition:all 0.3s linear;
+}
+#index>a>img{
+	vertical-align:middle;
+}
+#index>a.lf{
+	left:20px;
+}
+#index>a.rf{
+	right:20px;
+}
+#index>a:hover{
+	background:rgba(255,255,255,0.1);
+	color:#fff;
+}
+
+#index>span{
+	position:absolute;
+	top:60%;
+	left:35%;
+	font-family:raleway,"arial, helvetica, sans-serif";
+	font-size:19px;
+	color:#fff;
+	letter-spacing:10px;
+}

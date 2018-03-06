@@ -1,0 +1,51 @@
+#header div>a:nth-child(4){
+	color:#BABABA;
+}
+#classSet{
+	padding:10px;
+}
+
+#classSet>ul.show-class{
+	margin:0 auto;
+	width:70%;
+	height:1000px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+#classSet>ul.show-class>li{
+	width:360px;
+	height:430px;
+}
+
+#classSet>ul.show-class>li>a{
+	display:block;
+}
+#classSet>ul.show-class>li>a>p{
+	height:315px;
+	overflow:hidden;
+}
+#classSet>ul.show-class>li img{
+	height:315px;
+	transition:transform 0.5s linear;
+}
+#classSet>ul.show-class>li h2{
+	color:#A9A999;
+	margin-top:28px;
+	padding:0 8px;
+	transition:color 0.5s linear;
+}
+#classSet>ul.show-class>li>p{
+	font-size:13px;
+	padding:10px 8px;
+	transition:color 0.5s linear;
+}
+#classSet>ul.show-class>li.simple-intro img{
+	transform:scale(1.1);
+}
+#classSet>ul.show-class>li.simple-intro h2{
+	color:#fff;
+}
+#classSet>ul.show-class>li.simple-intro>p{
+	color:#BABABA;
+}

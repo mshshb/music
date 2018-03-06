@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>音乐培训机构 | </title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/header-footer.css"/>
+		<link rel="stylesheet" href="css/class-intro.css"/>
+	</head>
+	<body>
+		<div class="main">
+			<header id="header"></header>
+			<section id="class-intro">
+				<div class="class-intro">
+					<img src="" alt="" />
+					<div class="content">
+						<h2>钢琴培训</h2>
+						<div>
+							<p>招生对象：12-18周岁青少年</p>
+							<p>课时时长：45分钟</p>
+							<p>上课时间：周五晚 / 周六全天</p>
+							<p>课程介绍：起飞页倾力打造的一个从网站建设，网站运营管理到
+								网站推广的自动化免费建站平台，为中小微企业及个人提供免
+								费的在线响应式建站服务。起飞页倾力打造的一个从网站建设。
+								网网站运营管理到网站推广的自动化免费建站平台，为中小微
+								企业及个人提供免费的在线响应建站服务。
+							</p>
+						</div>
+						<a href="enlist.html">在线报名</a>
+					</div>
+				</div>			
+			</section>
+			<footer id="footer"></footer>
+		</div>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/header-footer.js"></script>
+		<script src="js/class-intro.js"></script>
+	</body>
+</html>

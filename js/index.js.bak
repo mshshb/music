@@ -1,0 +1,149 @@
+$(document).ready(function(){
+	$body=$("body");
+	var w=window.screen.width;
+	$body.css("width",w+"px");
+	var $sentence=$("#index span");
+	$sentence.html("THE RODE TO MUSIC WITH YOU");
+	/*广告轮播*/
+	$showPer=$("#index div.show-person");
+	var h=window.screen.height;
+	$showPer.css("height",h+"px");
+	var $ul=$showPer.children("ul");
+	/*左右切换的图标变化样式*/
+	var $alf=$("#index>a.lf");
+	$alf.hover(function(){
+		$(this).children("img").attr("src","imgs/index/lt2.svg");
+	},function(){
+		$(this).children("img").attr("src","imgs/index/lt1.svg");
+	});
+	var $arf=$("#index>a.rf");
+	$arf.hover(function(){
+		$(this).children("img").attr("src","imgs/index/gt2.svg");
+	},function(){
+		$(this).children("img").attr("src","imgs/index/gt1.svg");
+	});
+	$.ajax({
+		url:"data/index.php",
+		type:"get",
+		success:function(data){
+			var htmls="";
+			for(var item of data){
+				htmls+=`<li style="background:url(${item.pic}) no-repeat;background-size:cover"></li>`
+			}
+			htmls+=`<li style="background:url(${data[0].pic}) no-repeat;background-size:cover"></li>`;//增添第一个li
+			$ul.html(htmls);
+			$ul.css("width",w*(data.length+1)+"px");
+			var $lis=$("#index div.show-person>ul>li");
+			$lis.css("width",w+"px");
+			$lis.css("height",h+"px");
+			$.carousel.play(w,$ul,$alf,$arf);
+		}
+	});
+});
+/*轮播封装*/
+$.carousel={
+	is:false,
+	timer:null,
+	main:null,
+	moved:0,
+	play:function(slideWidth,$parent,$al,$ar){/*点击箭头图片切换*/
+		var that=this;
+		that.main=$ar;
+		var totalWidth=slideWidth*$parent.children().length-$parent.parent().innerWidth();
+		const LIWIDTH=slideWidth;
+		function move(){
+			if(that.moved<0){
+				that.moved=$parent.children().length-2;
+				$parent.css("transition","none");
+				$parent.css("margin-left",-($parent.children().length-1)*LIWIDTH+"px");
+			}
+			if(that.moved*LIWIDTH>totalWidth){
+				that.moved=1;
+				$parent.css("transition","none");
+				$parent.css("margin-left","0px");
+			}
+			setTimeout(function(){
+				$parent.css("transition","all 1s linear");
+				$parent.css("margin-left",-that.moved*LIWIDTH+"px");
+			},50);
+		}
+		$al.click(function(){
+			//that.stop();
+			that.moved--;
+			move();
+			//that.start();
+		});
+		/*$ar.click(function(){
+			that.stop();
+			that.moved++;
+			move();
+			that.start();
+		});*/
+		/*that.start();*/
+	},
+	start:function(){/*开始轮播*/
+		var that=this;
+		if(!that.is){
+			that.is=true;
+			that.timer=setInterval(function(){
+				that.main.click();
+			},3000);
+		}
+	},
+	stop:function(){/*停止轮播*/
+		this.is=false;
+		clearInterval(this.timer);
+	}
+};
+
+/*轮播*/
+	/*var carousel={is:false};
+	var timer=null;*/
+	/*开始轮播*/
+	/*function start($ar){
+		if(!carousel.is){
+			carousel.is=true;
+			timer=setInterval(function(){
+				$ar.click();
+			},3000);
+		}
+	}*/
+	/*停止轮播*/
+	/*function stop(){
+		carousel.is=false;
+		clearInterval(timer);
+	}*/
+	/*点击箭头图片切换*/
+	/*function slide(slideWidth,$parent,$al,$ar){
+		var moved=0;
+		var totalWidth=slideWidth*$parent.children().length-$parent.parent().innerWidth();
+		const LIWIDTH=slideWidth;
+		function move(){
+			if(moved<0){
+				moved=$parent.children().length-2;
+				$parent.css("transition","none");
+				$parent.css("margin-left",-($parent.children().length-1)*LIWIDTH+"px");
+			}
+			if(moved*LIWIDTH>totalWidth){
+				moved=1;
+				$parent.css("transition","none");
+				$parent.css("margin-left","0px");
+			}
+			setTimeout(function(){
+				$parent.css("transition","all 1s linear");
+				$parent.css("margin-left",-moved*LIWIDTH+"px");
+			},50);
+		}
+		$al.click(function(){
+			stop();
+			moved--;
+			move();
+			start($ar);
+		});
+		$ar.click(function(){
+			stop();
+			moved++;
+			move();
+			start($ar);
+		});
+	}*/

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>音乐培训机构 | </title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/header-footer.css"/>
+		<link rel="stylesheet" href="css/team-intro.css"/>
+	</head>
+	<body>
+		<div class="main">
+			<header id="header"></header>
+			<section id="team-intro">
+				<img src="" alt="" />
+				<div class="content">
+					<h2 class="tea">声乐老师</h2>
+					<p class="name">Jimmy Carter</p>
+					<p>
+						起飞页倾力打造的一个从网站建设.网站运营管理到网站推广的自动化免费建站平台,为中小微企业及个人提供免
+						费的在线响应式建站服务.起飞页倾力打造的一个从网站建设.网网站运营管理到网站推广的自动化免费建站平
+						台,为中小微企业及个人提供免费的在线响应式建站服务.
+					</p>
+					<p>
+						为终端用户浏览带来最佳用户体验.实现无需编程零基础建站,使人们轻松建设企业网站.专题网站.个人网站,满足
+						企业品牌宣传.个人形象展示.产品展示.营销推广.数据收集.
+					</p>
+				</div>
+			</section>
+			<footer id="footer"></footer>
+		</div>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/header-footer.js"></script>
+		<script src="js/team-intro.js"></script>
+	</body>
+</html>
